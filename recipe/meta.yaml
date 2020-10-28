@@ -3,7 +3,7 @@
 # Copyright (c) 2017, Continuum Analytics, Inc. All rights reserved.
 #
 # Distribution of the content approved by NVIDIA ( http://nvbugs/3052604 )
-{% set major_minor = "11.0" %}
+{% set major_minor = "11.1" %}
 
 # The following cudavars dictionary is a table of metadata for selecting various
 # paramaters based on the X.Y version number of cudatoolkit. The following is a description
@@ -133,6 +133,29 @@
     },
     "sysroot_version": "2.17",
   },
+  "11.1": {
+    "version": "11.1.0",
+    "version_patch": {
+      "linux64": "455.23.05",
+      "osx": "skip",
+      "ppc64le": "455.23.05",
+      "win": "456.43",
+    },
+    "subdomain": "developer.download",
+    "download_dir": "11.1.0",
+    "checksums": {
+      "linux64": "10c28f59cc2aba9a886d409534b05ddf",
+      "ppc64le": "ea44cd8728806aaf9278cf0929ed032d",
+      "win": "2786aedea8c05d17d21113645d6423e8",
+    },
+    "blob_ext": {
+      "linux64": ".run",
+      "ppc64le": ".run",
+      "win": ".exe",
+    },
+    "sysroot_version": "2.17",
+  },
+
 }
 %}
 {% set version = cudavars[major_minor]["version"] %}
